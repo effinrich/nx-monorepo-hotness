@@ -28,10 +28,15 @@ jobs:
           node-version: 20
           cache: 'npm'
 
-      - run: npm install --package-lock-only
-      - run: npm ci
+      - run: |
+          if [ -e yarn.lock ]; then
+          yarn install --frozen-lockfile
+          elif [ -e package-lock.json ]; then
+          npm ci
+          else
+          npm i
+          fi
       - uses: nrwl/nx-set-shas@v4
-
       # Prepend any command with "nx-cloud record --" to record its logs to Nx Cloud
       # - run: npx nx-cloud record -- echo Hello World
       - run: npx nx affected -t lint test build
