@@ -1,7 +1,12 @@
 const nxPreset = require('@nx/jest/preset').default
 
 module.exports = () => {
-  ;[...nxPreset]
+  /**
+   * @jest-environment jsdom
+   */
+  const jest = nxPresets()
+
+  // ;[...nxPreset]
   /**
    * When the daemon is enabled during unit tests,
    * and the daemon is already running, the daemon-client.ts
