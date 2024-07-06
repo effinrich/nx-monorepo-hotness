@@ -61,5 +61,12 @@
       }
     }
   },
+  "release": {
+    "changelog": {
+      "workspaceChangelog": {
+        "createRelease": "github"
+      }
+    }
+  },
   "nxCloudAccessToken": "YWNlNzBlMzctMzFiMS00NTNhLWI0OTMtNDQ2YWI5YzQ1YzJlfHJlYWQtd3JpdGU="
 }
