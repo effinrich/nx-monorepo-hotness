@@ -28,6 +28,7 @@ jobs:
           node-version: 20
           cache: 'npm'
 
+      - run: npm install --package-lock-only
       - run: npm ci
       - uses: nrwl/nx-set-shas@v4
 
