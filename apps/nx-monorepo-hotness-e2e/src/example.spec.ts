@@ -1,6 +1,3 @@
-/**
- * @jest-environment jsdom
- */
 import { expect, test } from '@playwright/test'
 
 test('has title', async ({ page }) => {
