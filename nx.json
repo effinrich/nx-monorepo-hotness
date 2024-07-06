@@ -62,9 +62,19 @@
     }
   },
   "release": {
+    "version": {
+      "conventionalCommits": true
+    },
     "changelog": {
-      "workspaceChangelog": {
-        "createRelease": "github"
+      "projectChangelogs": {
+        "file": false,
+        "createRelease": "github",
+        "renderOptions": {
+          "authors": true,
+          "mapAuthorsToGitHubUsernames": true,
+          "commitReferences": true,
+          "versionTitleDate": true
+        }
       }
     }
   },
