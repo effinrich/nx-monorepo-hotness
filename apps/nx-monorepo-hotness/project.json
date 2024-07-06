@@ -5,16 +5,5 @@
   "projectType": "application",
   "tags": [],
   "// targets": "to see all targets run: nx show project nx-monorepo-hotness --web",
-  "targets": {
-    "build": {
-      "executor": "@nx/js:tsc",
-      "options": {
-        "outputPath": "dist/apps/nx-monorepo-hotness",
-        "main": "dist/apps/nx-monorepo-hotness/src/index.ts",
-        "tsConfig": "apps/nx-monorepo-hotness/tsconfig.app.json",
-        "assets": ["apps/nx-monorepo-hotness/*.md"],
-        "clean": false
-      }
-    }
-  }
+  "targets": {}
 }
