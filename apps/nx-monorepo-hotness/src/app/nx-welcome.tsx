@@ -420,7 +420,7 @@ export function NxWelcome({ title }: { title: string }) {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
     }
-          `,
+          `
         }}
       />
       <div className="wrapper">
@@ -880,7 +880,7 @@ export function NxWelcome({ title }: { title: string }) {
         </div>
       </div>
     </>
-  );
+  )
 }
 
-export default NxWelcome;
+export default NxWelcome
