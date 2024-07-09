@@ -1,0 +1,17 @@
+{
+  "name": "portfolio",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "web": "yarn dev",
+    "dev:vite": "NODE_ENV=development vite --host --clearScreen false",
+    "dev:vite:extract": "EXTRACT=1 yarn dev",
+    "dev": "yarn dev:webpack",
+    "dev:webpack": "DISABLE_EXTRACTION=true NODE_ENV=development webpack serve",
+    "dev:extract": "DISABLE_EXTRACTION=false NODE_ENV=development webpack serve",
+    "prod": "NODE_ENV=production webpack --json=dist/compilation-stats.json",
+    "upgrade:tamagui": "yarn up '*tamagui*'@latest '@tamagui/*'@latest"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
