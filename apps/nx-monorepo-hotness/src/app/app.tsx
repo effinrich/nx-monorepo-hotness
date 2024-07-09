@@ -9,7 +9,7 @@ const StyledApp = styled.div`
 export function App() {
   return (
     <StyledApp>
-      <NxWelcome title="nx-monorepo-hotness" />
+      <NxWelcome title="Create your app remarkable fast" />
     </StyledApp>
   )
 }

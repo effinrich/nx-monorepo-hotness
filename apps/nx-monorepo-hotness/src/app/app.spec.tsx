@@ -13,6 +13,6 @@ describe('App', () => {
 
   it('should have a greeting as the title', () => {
     const { getByText } = render(<App />)
-    expect(getByText(/Welcome nx-monorepo-hotness/i)).toBeTruthy()
+    expect(getByText(/Create your app remarkable fast/i)).toBeTruthy()
   })
 })
