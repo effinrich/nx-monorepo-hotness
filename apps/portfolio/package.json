@@ -3,13 +3,7 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "web": "npm run dev",
     "dev:vite": "NODE_ENV=development vite --host --clearScreen false",
-    "dev:vite:extract": "EXTRACT=1 npm run dev",
-    "dev": "npm run dev:webpack",
-    "dev:webpack": "DISABLE_EXTRACTION=true NODE_ENV=development webpack serve",
-    "dev:extract": "DISABLE_EXTRACTION=false NODE_ENV=development webpack serve",
-    "prod": "NODE_ENV=production webpack --json=dist/compilation-stats.json",
     "upgrade:tamagui": "npm run up '*tamagui*'@latest '@tamagui/*'@latest"
   },
   "dependencies": {},

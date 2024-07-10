@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-empty-interface */
 import { createTamagui } from '@tamagui/core'
 import { shorthands } from '@tamagui/shorthands'
 
@@ -16,7 +17,7 @@ const config = createTamagui({
   fonts,
   themes,
   tokens,
-  media,
+  media
 })
 
 type AppConfig = typeof config
